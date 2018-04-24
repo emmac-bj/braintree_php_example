@@ -1,3 +1,4 @@
 <?php
-echo "I'm the token";
+require_once("../includes/braintree_init.php");
+echo($gateway->ClientToken()->generate());
 ?>
