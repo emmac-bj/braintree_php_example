@@ -30,16 +30,3 @@ if ($result->success || !is_null($result->transaction)) {
     echo $transaction->id;
 
 }
-else {
-
-    $errorString = "";
-
-
-
-    foreach($result->errors->deepAll() as $error) {
-
-        $errorString .= 'Error: ' . $error->code . ": " . $error->message . "\n";
-
-    }
-    echo $errorString. " ". $amount;
-}
