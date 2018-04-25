@@ -41,5 +41,5 @@ else {
         $errorString .= 'Error: ' . $error->code . ": " . $error->message . "\n";
 
     }
-    echo $errorString;
+    echo $errorString. " ". $amount;
 }
